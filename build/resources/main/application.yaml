@@ -1,12 +1,37 @@
-server:
-  port: 8082
-
 spring:
   application:
     name: assistant-service
+  ai:
+    google:
+      genai:
+        # Gemini Developer API (key from Google AI Studio).
+        # Do NOT set project-id or location here: that switches the client to Vertex AI.
+        # The fallback lets the service start without a key; calls then fail and the service degrades.
+        api-key: ${GEMINI_API_KEY:not-configured}
+        # Both property styles are declared; the one that does not exist is ignored.
+        chat:
+          model: ${GEMINI_CHAT_MODEL:gemini-3.5-flash}
+          temperature: 0.0
+          options:
+            model: ${GEMINI_CHAT_MODEL:gemini-3.5-flash}
+            temperature: 0.0
+        embedding:
+          api-key: ${GEMINI_API_KEY:not-configured}
+          text:
+            model: ${GEMINI_EMBEDDING_MODEL:gemini-embedding-001}
+            options:
+              model: ${GEMINI_EMBEDDING_MODEL:gemini-embedding-001}
 
 
 # Clinical protocol corpus (JSON in the classpath). Extend it by adding entries to the file.
 # assistant:
 #   corpus:
 #     location: protocols/protocols.json   # env: ASSISTANT_CORPUS_LOCATION
+
+
+# RAG retrieval. The similarity threshold is calibrated against the real embeddings
+# (see RetrievalCalibrationTest).
+# assistant:
+#   rag:
+#     top-k: 3                    # env: ASSISTANT_RAG_TOPK
+#     similarity-threshold: 0.0   # env: ASSISTANT_RAG_SIMILARITYTHRESHOLD

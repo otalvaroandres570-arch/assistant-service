@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.vida_cruz.assistant_service.infraestructure.adapters.retrieval.RetrievalCalibrationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-11-13T04:19:57.315Z" hostname="HOME" time="11.093">
+  <properties/>
+  <testcase name="shouldPrintTheSimilarityOfEachQuestionWithEverySection()" classname="com.vida_cruz.assistant_service.infraestructure.adapters.retrieval.RetrievalCalibrationTest" time="6.54"/>
+  <system-out><![CDATA[23:19:57.494 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.vida_cruz.assistant_service.infraestructure.adapters.retrieval.RetrievalCalibrationTest]: RetrievalCalibrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+23:19:57.704 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.vida_cruz.assistant_service.AssistantServiceApplication for test class com.vida_cruz.assistant_service.infraestructure.adapters.retrieval.RetrievalCalibrationTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.16)
+
+2026-11-12T23:19:58.352-05:00  INFO 7068 --- [assistant-service] [    Test worker] c.v.a.i.a.r.RetrievalCalibrationTest     : Starting RetrievalCalibrationTest using Java 21.0.12.1 with PID 7068 (started by Andres in C:\Users\Andres\IdeaProjects\ceiba-test\assistant-service)
+2026-11-12T23:19:58.355-05:00  INFO 7068 --- [assistant-service] [    Test worker] c.v.a.i.a.r.RetrievalCalibrationTest     : No active profile set, falling back to 1 default profile: "default"
+2026-11-12T23:20:01.040-05:00  INFO 7068 --- [assistant-service] [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-11-12T23:20:01.855-05:00  INFO 7068 --- [assistant-service] [    Test worker] c.v.a.i.a.r.RetrievalCalibrationTest     : Started RetrievalCalibrationTest in 3.926 seconds (process running for 5.568)
+2026-11-12T23:20:02.680-05:00  INFO 7068 --- [assistant-service] [oundedElastic-1] o.s.ai.vectorstore.SimpleVectorStore     : Calling EmbeddingModel for document id = PROTO-001|Definición
+2026-11-12T23:20:03.673-05:00  INFO 7068 --- [assistant-service] [oundedElastic-1] o.s.ai.vectorstore.SimpleVectorStore     : Calling EmbeddingModel for document id = PROTO-001|Medidas iniciales
+2026-11-12T23:20:04.010-05:00  INFO 7068 --- [assistant-service] [oundedElastic-1] o.s.ai.vectorstore.SimpleVectorStore     : Calling EmbeddingModel for document id = PROTO-001|Contraindicaciones
+2026-11-12T23:20:04.364-05:00  INFO 7068 --- [assistant-service] [oundedElastic-1] o.s.ai.vectorstore.SimpleVectorStore     : Calling EmbeddingModel for document id = PROTO-002|Criterios
+2026-11-12T23:20:04.767-05:00  INFO 7068 --- [assistant-service] [oundedElastic-1] o.s.ai.vectorstore.SimpleVectorStore     : Calling EmbeddingModel for document id = PROTO-002|Acciones iniciales
+2026-11-12T23:20:05.095-05:00  INFO 7068 --- [assistant-service] [oundedElastic-1] o.s.ai.vectorstore.SimpleVectorStore     : Calling EmbeddingModel for document id = PROTO-003|Clasificación
+2026-11-12T23:20:05.449-05:00  INFO 7068 --- [assistant-service] [oundedElastic-1] o.s.ai.vectorstore.SimpleVectorStore     : Calling EmbeddingModel for document id = PROTO-003|Rehidratación
+  0.860  PROTO-001 / Medidas iniciales
+  0.778  PROTO-001 / Definición
+  0.761  PROTO-001 / Contraindicaciones
+  0.682  PROTO-002 / Acciones iniciales
+  0.634  PROTO-002 / Criterios
+  0.601  PROTO-003 / Rehidratación
+  0.578  PROTO-003 / Clasificación
+  0.815  PROTO-002 / Acciones iniciales
+  0.677  PROTO-002 / Criterios
+  0.590  PROTO-001 / Medidas iniciales
+  0.588  PROTO-001 / Definición
+  0.577  PROTO-003 / Rehidratación
+  0.547  PROTO-001 / Contraindicaciones
+  0.546  PROTO-003 / Clasificación
+  0.579  PROTO-002 / Acciones iniciales
+  0.568  PROTO-001 / Medidas iniciales
+  0.567  PROTO-001 / Definición
+  0.537  PROTO-001 / Contraindicaciones
+  0.535  PROTO-003 / Rehidratación
+  0.531  PROTO-002 / Criterios
+  0.527  PROTO-003 / Clasificación
+  0.490  PROTO-002 / Criterios
+  0.489  PROTO-001 / Definición
+  0.489  PROTO-001 / Medidas iniciales
+  0.488  PROTO-002 / Acciones iniciales
+  0.483  PROTO-003 / Clasificación
+  0.477  PROTO-003 / Rehidratación
+  0.476  PROTO-001 / Contraindicaciones
+  0.586  PROTO-002 / Acciones iniciales
+  0.561  PROTO-001 / Medidas iniciales
+  0.553  PROTO-003 / Rehidratación
+  0.548  PROTO-001 / Definición
+  0.548  PROTO-002 / Criterios
+  0.545  PROTO-001 / Contraindicaciones
+  0.533  PROTO-003 / Clasificación
+  0.793  PROTO-003 / Rehidratación
+  0.740  PROTO-003 / Clasificación
+  0.625  PROTO-002 / Acciones iniciales
+  0.556  PROTO-001 / Medidas iniciales
+  0.542  PROTO-001 / Contraindicaciones
+  0.540  PROTO-002 / Criterios
+  0.539  PROTO-001 / Definición
+  0.724  PROTO-001 / Medidas iniciales
+  0.678  PROTO-001 / Definición
+  0.667  PROTO-001 / Contraindicaciones
+  0.587  PROTO-002 / Criterios
+  0.586  PROTO-002 / Acciones iniciales
+  0.583  PROTO-003 / Rehidratación
+  0.569  PROTO-003 / Clasificación
+]]></system-out>
+  <system-err><![CDATA[Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+WARNING: A Java agent has been loaded dynamically (C:\Users\Andres\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy-agent\1.17.8\f09415827a71be7ed621c7bd02550678f28bc81c\byte-buddy-agent-1.17.8.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+</testsuite>
