@@ -36,6 +36,9 @@ dependencies {
 	implementation 'org.springframework.ai:spring-ai-starter-model-google-genai-embedding'
 	implementation 'org.springframework.ai:spring-ai-vector-store'
 
+	implementation 'io.github.resilience4j:resilience4j-circuitbreaker:2.2.0'
+	implementation 'io.github.resilience4j:resilience4j-reactor:2.2.0'
+
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 	testCompileOnly 'org.projectlombok:lombok'

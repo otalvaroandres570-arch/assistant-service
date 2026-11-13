@@ -6,6 +6,7 @@ import com.vida_cruz.assistant_service.domain.spi.ClinicalAnswerGenerator;
 import com.vida_cruz.assistant_service.domain.spi.ProtocolRetriever;
 import com.vida_cruz.assistant_service.domain.usecase.AskClinicalAssistantUseCase;
 import com.vida_cruz.assistant_service.infraestructure.adapters.generation.SpringAiClinicalAnswerGenerator;
+import com.vida_cruz.assistant_service.infraestructure.adapters.resilience.ProviderGuard;
 import com.vida_cruz.assistant_service.infraestructure.adapters.retrieval.VectorStoreProtocolRetriever;
 import org.springframework.ai.chat.model.ChatModel;
 import org.springframework.ai.embedding.EmbeddingModel;
@@ -26,14 +27,16 @@ public class RagConfiguration {
 
     @Bean
     public ProtocolRetriever protocolRetriever(VectorStore vectorStore, ProtocolCorpus corpus,
-                                               RagProperties properties) {
-        return new VectorStoreProtocolRetriever(vectorStore, corpus,
+                                               RagProperties properties, ProviderGuard guard) {
+        ProtocolRetriever retriever = new VectorStoreProtocolRetriever(vectorStore, corpus,
                 properties.topK(), properties.similarityThreshold());
+        return question -> guard.protect(retriever.retrieve(question));
     }
 
     @Bean
-    public ClinicalAnswerGenerator clinicalAnswerGenerator(ChatModel chatModel) {
-        return new SpringAiClinicalAnswerGenerator(chatModel);
+    public ClinicalAnswerGenerator clinicalAnswerGenerator(ChatModel chatModel, ProviderGuard guard) {
+        ClinicalAnswerGenerator generator = new SpringAiClinicalAnswerGenerator(chatModel);
+        return (question, context) -> guard.protect(generator.generate(question, context));
     }
 
     @Bean

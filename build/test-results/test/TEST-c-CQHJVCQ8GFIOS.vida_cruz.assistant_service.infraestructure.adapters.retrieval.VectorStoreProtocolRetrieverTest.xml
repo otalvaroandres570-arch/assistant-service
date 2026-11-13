@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.vida_cruz.assistant_service.infraestructure.adapters.retrieval.VectorStoreProtocolRetrieverTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-11-13T04:45:28.780Z" hostname="HOME" time="1.283">
-  <properties/>
-  <testcase name="shouldReturnCorpusSectionsBestFirstAndEmbedTheCorpusOnlyOnce()" classname="com.vida_cruz.assistant_service.infraestructure.adapters.retrieval.VectorStoreProtocolRetrieverTest" time="1.26"/>
-  <testcase name="shouldRetryTheEmbeddingAfterAFailureAndIgnoreDocumentsOutsideTheCorpus()" classname="com.vida_cruz.assistant_service.infraestructure.adapters.retrieval.VectorStoreProtocolRetrieverTest" time="0.018"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

@@ -1,7 +1,16 @@
+server:
+  port: 8082
+
 spring:
   application:
     name: assistant-service
   ai:
+    # The provider is wrapped by a circuit breaker and a timeout, so inner retries stay short.
+    retry:
+      max-attempts: 2
+      backoff:
+        initial-interval: 500ms
+        max-interval: 2s
     google:
       genai:
         # Gemini Developer API (key from Google AI Studio).
@@ -22,15 +31,16 @@ spring:
             options:
               model: ${GEMINI_EMBEDDING_MODEL:gemini-embedding-001}
 
-
 # Clinical protocol corpus (JSON in the classpath). Extend it by adding entries to the file.
 # assistant:
 #   corpus:
 #     location: protocols/protocols.json   # env: ASSISTANT_CORPUS_LOCATION
-
-# RAG retrieval. Threshold calibrated with RetrievalCalibrationTest against gemini-embedding-001:
-# questions with a protocol score >= 0.72, questions without one <= 0.59. Recalibrate if the embedding model changes.
-# assistant:
 #   rag:
 #     top-k: 3                     # env: ASSISTANT_RAG_TOPK
 #     similarity-threshold: 0.65   # env: ASSISTANT_RAG_SIMILARITYTHRESHOLD
+#   resilience:                    # circuit breaker and timeout around Gemini
+#     timeout: 20s                 # env: ASSISTANT_RESILIENCE_TIMEOUT
+#     sliding-window-size: 10
+#     minimum-number-of-calls: 5
+#     failure-rate-threshold: 50
+#     open-state-duration: 30s
