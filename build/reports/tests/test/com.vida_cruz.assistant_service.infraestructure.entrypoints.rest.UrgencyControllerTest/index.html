@@ -31,9 +31,6 @@
 <li>
 <a class="" href="#">standard output</a>
 </li>
-<li>
-<a class="" href="#">error output</a>
-</li>
 </ul>
 <div class="tab">
 <h2>summary</h2>
@@ -65,7 +62,7 @@
 </td>
 <td>
 <div class="infoBox duration">
-<div class="counter">4.114s</div>
+<div class="counter">0.545s</div>
 <p>duration</p>
 </div>
 </td>
@@ -103,7 +100,7 @@
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td data-sort-value="28">0.028s</td>
+<td data-sort-value="13">0.013s</td>
 <td class="success" data-sort-value="100">100%</td>
 </tr>
 <tr>
@@ -112,7 +109,7 @@
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td data-sort-value="292">0.292s</td>
+<td data-sort-value="18">0.018s</td>
 <td class="success" data-sort-value="100">100%</td>
 </tr>
 </tbody>
@@ -125,8 +122,8 @@
 <div class="clipboard-copy-btn-container">
 <button class="clipboard-copy-btn" aria-label="Copy to clipboard" data-copy-element-id="root-0-test-stdout-com.vida_cruz.assistant_service.infraestructure.entrypoints.rest.UrgencyControllerTest">Copy</button>
 </div>
-<pre id="root-0-test-stdout-com.vida_cruz.assistant_service.infraestructure.entrypoints.rest.UrgencyControllerTest">10:15:32.455 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.vida_cruz.assistant_service.infraestructure.entrypoints.rest.UrgencyControllerTest]: UrgencyControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-10:15:32.668 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.vida_cruz.assistant_service.AssistantServiceApplication for test class com.vida_cruz.assistant_service.infraestructure.entrypoints.rest.UrgencyControllerTest
+<pre id="root-0-test-stdout-com.vida_cruz.assistant_service.infraestructure.entrypoints.rest.UrgencyControllerTest">2026-11-13T11:35:17.120-05:00  INFO 18984 --- [assistant-service] [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.vida_cruz.assistant_service.infraestructure.entrypoints.rest.UrgencyControllerTest]: UrgencyControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-13T11:35:17.138-05:00  INFO 18984 --- [assistant-service] [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.vida_cruz.assistant_service.AssistantServiceApplication for test class com.vida_cruz.assistant_service.infraestructure.entrypoints.rest.UrgencyControllerTest
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -137,23 +134,9 @@
 
  :: Spring Boot ::               (v3.5.16)
 
-2026-11-13T10:15:33.241-05:00  INFO 10500 --- [assistant-service] [    Test worker] c.v.a.i.e.rest.UrgencyControllerTest     : Starting UrgencyControllerTest using Java 21.0.12.1 with PID 10500 (started by Andres in C:\Users\Andres\IdeaProjects\ceiba-test\assistant-service)
-2026-11-13T10:15:33.243-05:00  INFO 10500 --- [assistant-service] [    Test worker] c.v.a.i.e.rest.UrgencyControllerTest     : No active profile set, falling back to 1 default profile: &quot;default&quot;
-2026-11-13T10:15:36.146-05:00  INFO 10500 --- [assistant-service] [    Test worker] c.v.a.i.e.rest.UrgencyControllerTest     : Started UrgencyControllerTest in 3.397 seconds (process running for 9.534)
-</pre>
-</span>
-</div>
-<div class="tab">
-<h2>error output</h2>
-<span class="code">
-<div class="clipboard-copy-btn-container">
-<button class="clipboard-copy-btn" aria-label="Copy to clipboard" data-copy-element-id="root-0-test-stderr-com.vida_cruz.assistant_service.infraestructure.entrypoints.rest.UrgencyControllerTest">Copy</button>
-</div>
-<pre id="root-0-test-stderr-com.vida_cruz.assistant_service.infraestructure.entrypoints.rest.UrgencyControllerTest">Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
-WARNING: A Java agent has been loaded dynamically (C:\Users\Andres\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy-agent\1.17.8\f09415827a71be7ed621c7bd02550678f28bc81c\byte-buddy-agent-1.17.8.jar)
-WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
-WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
-WARNING: Dynamic loading of agents will be disallowed by default in a future release
+2026-11-13T11:35:17.200-05:00  INFO 18984 --- [assistant-service] [    Test worker] c.v.a.i.e.rest.UrgencyControllerTest     : Starting UrgencyControllerTest using Java 21.0.12.1 with PID 18984 (started by Andres in C:\Users\Andres\IdeaProjects\ceiba-test\assistant-service)
+2026-11-13T11:35:17.201-05:00  INFO 18984 --- [assistant-service] [    Test worker] c.v.a.i.e.rest.UrgencyControllerTest     : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2026-11-13T11:35:17.626-05:00  INFO 18984 --- [assistant-service] [    Test worker] c.v.a.i.e.rest.UrgencyControllerTest     : Started UrgencyControllerTest in 0.481 seconds (process running for 57.35)
 </pre>
 </span>
 </div>
@@ -167,7 +150,7 @@ WARNING: Dynamic loading of agents will be disallowed by default in a future rel
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="https://www.gradle.org">Gradle 9.8.2</a> at Nov 13, 2026, 10:15:37 AM</p>
+<a href="https://www.gradle.org">Gradle 9.8.2</a> at Nov 13, 2026, 11:35:18 AM</p>
 </div>
 </div>
 </body>

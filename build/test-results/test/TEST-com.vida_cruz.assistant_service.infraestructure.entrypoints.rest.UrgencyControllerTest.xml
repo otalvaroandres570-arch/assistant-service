@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.vida_cruz.assistant_service.infraestructure.entrypoints.rest.UrgencyControllerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-11-13T15:15:32.372Z" hostname="HOME" time="4.112">
+<testsuite name="com.vida_cruz.assistant_service.infraestructure.entrypoints.rest.UrgencyControllerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-11-13T16:35:17.115Z" hostname="HOME" time="0.545">
   <properties/>
-  <testcase name="shouldReturnTheActivePatientsOfEveryLevelIncludingThoseWithNone()" classname="com.vida_cruz.assistant_service.infraestructure.entrypoints.rest.UrgencyControllerTest" time="0.292"/>
-  <testcase name="shouldAnswer503WhenTheStateStoreIsUnreachable()" classname="com.vida_cruz.assistant_service.infraestructure.entrypoints.rest.UrgencyControllerTest" time="0.028"/>
-  <system-out><![CDATA[10:15:32.455 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.vida_cruz.assistant_service.infraestructure.entrypoints.rest.UrgencyControllerTest]: UrgencyControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-10:15:32.668 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.vida_cruz.assistant_service.AssistantServiceApplication for test class com.vida_cruz.assistant_service.infraestructure.entrypoints.rest.UrgencyControllerTest
+  <testcase name="shouldReturnTheActivePatientsOfEveryLevelIncludingThoseWithNone()" classname="com.vida_cruz.assistant_service.infraestructure.entrypoints.rest.UrgencyControllerTest" time="0.018"/>
+  <testcase name="shouldAnswer503WhenTheStateStoreIsUnreachable()" classname="com.vida_cruz.assistant_service.infraestructure.entrypoints.rest.UrgencyControllerTest" time="0.013"/>
+  <system-out><![CDATA[2026-11-13T11:35:17.120-05:00  INFO 18984 --- [assistant-service] [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.vida_cruz.assistant_service.infraestructure.entrypoints.rest.UrgencyControllerTest]: UrgencyControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-13T11:35:17.138-05:00  INFO 18984 --- [assistant-service] [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.vida_cruz.assistant_service.AssistantServiceApplication for test class com.vida_cruz.assistant_service.infraestructure.entrypoints.rest.UrgencyControllerTest
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -15,15 +15,10 @@
 
  :: Spring Boot ::               (v3.5.16)
 
-2026-11-13T10:15:33.241-05:00  INFO 10500 --- [assistant-service] [    Test worker] c.v.a.i.e.rest.UrgencyControllerTest     : Starting UrgencyControllerTest using Java 21.0.12.1 with PID 10500 (started by Andres in C:\Users\Andres\IdeaProjects\ceiba-test\assistant-service)
-2026-11-13T10:15:33.243-05:00  INFO 10500 --- [assistant-service] [    Test worker] c.v.a.i.e.rest.UrgencyControllerTest     : No active profile set, falling back to 1 default profile: "default"
-2026-11-13T10:15:36.146-05:00  INFO 10500 --- [assistant-service] [    Test worker] c.v.a.i.e.rest.UrgencyControllerTest     : Started UrgencyControllerTest in 3.397 seconds (process running for 9.534)
-2026-11-13T10:15:36.469-05:00  WARN 10500 --- [assistant-service] [     parallel-2] c.v.a.i.e.error.GlobalExceptionHandler   : State store unavailable: org.springframework.data.redis.RedisConnectionFailureException: redis down
+2026-11-13T11:35:17.200-05:00  INFO 18984 --- [assistant-service] [    Test worker] c.v.a.i.e.rest.UrgencyControllerTest     : Starting UrgencyControllerTest using Java 21.0.12.1 with PID 18984 (started by Andres in C:\Users\Andres\IdeaProjects\ceiba-test\assistant-service)
+2026-11-13T11:35:17.201-05:00  INFO 18984 --- [assistant-service] [    Test worker] c.v.a.i.e.rest.UrgencyControllerTest     : No active profile set, falling back to 1 default profile: "default"
+2026-11-13T11:35:17.626-05:00  INFO 18984 --- [assistant-service] [    Test worker] c.v.a.i.e.rest.UrgencyControllerTest     : Started UrgencyControllerTest in 0.481 seconds (process running for 57.35)
+2026-11-13T11:35:17.654-05:00  WARN 18984 --- [assistant-service] [    parallel-14] c.v.a.i.e.error.GlobalExceptionHandler   : State store unavailable: org.springframework.data.redis.RedisConnectionFailureException: redis down
 ]]></system-out>
-  <system-err><![CDATA[Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
-WARNING: A Java agent has been loaded dynamically (C:\Users\Andres\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy-agent\1.17.8\f09415827a71be7ed621c7bd02550678f28bc81c\byte-buddy-agent-1.17.8.jar)
-WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
-WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
-WARNING: Dynamic loading of agents will be disallowed by default in a future release
-]]></system-err>
+  <system-err><![CDATA[]]></system-err>
 </testsuite>

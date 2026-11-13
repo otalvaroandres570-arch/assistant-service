@@ -62,7 +62,7 @@
 </td>
 <td>
 <div class="infoBox duration">
-<div class="counter">4.296s</div>
+<div class="counter">5.883s</div>
 <p>duration</p>
 </div>
 </td>
@@ -98,7 +98,7 @@
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td data-sort-value="583">0.583s</td>
+<td data-sort-value="1422">1.422s</td>
 <td class="success" data-sort-value="100">100%</td>
 </tr>
 <tr>
@@ -107,7 +107,7 @@
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td data-sort-value="9">0.009s</td>
+<td data-sort-value="19">0.019s</td>
 <td class="success" data-sort-value="100">100%</td>
 </tr>
 <tr>
@@ -116,7 +116,7 @@
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td data-sort-value="17">0.017s</td>
+<td data-sort-value="28">0.028s</td>
 <td class="success" data-sort-value="100">100%</td>
 </tr>
 <tr>
@@ -125,7 +125,7 @@
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td data-sort-value="22">0.022s</td>
+<td data-sort-value="40">0.040s</td>
 <td class="success" data-sort-value="100">100%</td>
 </tr>
 <tr>
@@ -134,7 +134,7 @@
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td data-sort-value="11">0.011s</td>
+<td data-sort-value="19">0.019s</td>
 <td class="success" data-sort-value="100">100%</td>
 </tr>
 </tbody>
@@ -147,28 +147,28 @@
 <div class="clipboard-copy-btn-container">
 <button class="clipboard-copy-btn" aria-label="Copy to clipboard" data-copy-element-id="root-0-test-stdout-com.vida_cruz.assistant_service.infraestructure.adapters.urgency.RedisUrgencyBoardIntegrationTest">Copy</button>
 </div>
-<pre id="root-0-test-stdout-com.vida_cruz.assistant_service.infraestructure.adapters.urgency.RedisUrgencyBoardIntegrationTest">10:15:28.200 [Test worker] INFO org.testcontainers.images.PullPolicy -- Image pull policy will be performed by: DefaultPullPolicy()
-10:15:28.209 [Test worker] INFO org.testcontainers.utility.ImageNameSubstitutor -- Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
-10:15:28.225 [Test worker] INFO org.testcontainers.DockerClientFactory -- Testcontainers version: 1.21.4
-10:15:28.588 [Test worker] INFO org.testcontainers.dockerclient.DockerClientProviderStrategy -- Loaded org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
-10:15:28.986 [Test worker] INFO org.testcontainers.dockerclient.DockerClientProviderStrategy -- Found Docker environment with local Npipe socket (npipe:////./pipe/docker_engine)
-10:15:28.988 [Test worker] INFO org.testcontainers.DockerClientFactory -- Docker host IP address is localhost
-10:15:29.015 [Test worker] INFO org.testcontainers.DockerClientFactory -- Connected to docker: 
+<pre id="root-0-test-stdout-com.vida_cruz.assistant_service.infraestructure.adapters.urgency.RedisUrgencyBoardIntegrationTest">2026-11-13T11:34:51.684-05:00  INFO 18984 --- [assistant-service] [    Test worker] org.testcontainers.images.PullPolicy     : Image pull policy will be performed by: DefaultPullPolicy()
+2026-11-13T11:34:51.691-05:00  INFO 18984 --- [assistant-service] [    Test worker] o.t.utility.ImageNameSubstitutor         : Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2026-11-13T11:34:51.718-05:00  INFO 18984 --- [assistant-service] [    Test worker] org.testcontainers.DockerClientFactory   : Testcontainers version: 1.21.4
+2026-11-13T11:34:52.154-05:00  INFO 18984 --- [assistant-service] [    Test worker] o.t.d.DockerClientProviderStrategy       : Loaded org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2026-11-13T11:34:52.709-05:00  INFO 18984 --- [assistant-service] [    Test worker] o.t.d.DockerClientProviderStrategy       : Found Docker environment with local Npipe socket (npipe:////./pipe/docker_engine)
+2026-11-13T11:34:52.712-05:00  INFO 18984 --- [assistant-service] [    Test worker] org.testcontainers.DockerClientFactory   : Docker host IP address is localhost
+2026-11-13T11:34:52.739-05:00  INFO 18984 --- [assistant-service] [    Test worker] org.testcontainers.DockerClientFactory   : Connected to docker: 
   Server Version: 29.9.3
   API Version: 1.56
   Operating System: Docker Desktop
   Total Memory: 5813 MB
   Labels: 
     com.docker.desktop.address=npipe://\\.\pipe\docker_cli
-10:15:29.121 [Test worker] INFO tc.testcontainers/ryuk:0.12.0 -- Creating container for image: testcontainers/ryuk:0.12.0
-10:15:29.435 [Test worker] INFO tc.testcontainers/ryuk:0.12.0 -- Container testcontainers/ryuk:0.12.0 is starting: da27dcaff64b7093f5d561fc82349b790cae77a7c93c35283a6bd5780cd87a15
-10:15:29.908 [Test worker] INFO tc.testcontainers/ryuk:0.12.0 -- Container testcontainers/ryuk:0.12.0 started in PT0.7864548S
-10:15:29.919 [Test worker] INFO org.testcontainers.utility.RyukResourceReaper -- Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
-10:15:29.920 [Test worker] INFO org.testcontainers.DockerClientFactory -- Checking the system...
-10:15:29.922 [Test worker] INFO org.testcontainers.DockerClientFactory -- ✔︎ Docker server version should be at least 1.6.0
-10:15:29.923 [Test worker] INFO tc.redis:7-alpine -- Creating container for image: redis:7-alpine
-10:15:30.042 [Test worker] INFO tc.redis:7-alpine -- Container redis:7-alpine is starting: 039add64aa98144cae3630ed6bb7dade017f90a75bc5b364e9c4188eb3a074bd
-10:15:30.443 [Test worker] INFO tc.redis:7-alpine -- Container redis:7-alpine started in PT0.5206479S
+2026-11-13T11:34:52.896-05:00  INFO 18984 --- [assistant-service] [    Test worker] tc.testcontainers/ryuk:0.12.0            : Creating container for image: testcontainers/ryuk:0.12.0
+2026-11-13T11:34:53.327-05:00  INFO 18984 --- [assistant-service] [    Test worker] tc.testcontainers/ryuk:0.12.0            : Container testcontainers/ryuk:0.12.0 is starting: 203269371ea14847f7d4ea7abbf3ee38f57851d0f3173a2ef8a5b2039efcdee0
+2026-11-13T11:34:53.887-05:00  INFO 18984 --- [assistant-service] [    Test worker] tc.testcontainers/ryuk:0.12.0            : Container testcontainers/ryuk:0.12.0 started in PT0.9914811S
+2026-11-13T11:34:53.897-05:00  INFO 18984 --- [assistant-service] [    Test worker] o.t.utility.RyukResourceReaper           : Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2026-11-13T11:34:53.898-05:00  INFO 18984 --- [assistant-service] [    Test worker] org.testcontainers.DockerClientFactory   : Checking the system...
+2026-11-13T11:34:53.898-05:00  INFO 18984 --- [assistant-service] [    Test worker] org.testcontainers.DockerClientFactory   : ✔︎ Docker server version should be at least 1.6.0
+2026-11-13T11:34:53.899-05:00  INFO 18984 --- [assistant-service] [    Test worker] tc.redis:7-alpine                        : Creating container for image: redis:7-alpine
+2026-11-13T11:34:54.221-05:00  INFO 18984 --- [assistant-service] [    Test worker] tc.redis:7-alpine                        : Container redis:7-alpine is starting: ae294de064309ff5a99bd70f08a38c3e682d3edd2b2b7a189240cfafbc6e2c9c
+2026-11-13T11:34:55.324-05:00  INFO 18984 --- [assistant-service] [    Test worker] tc.redis:7-alpine                        : Container redis:7-alpine started in PT1.4247263S
 </pre>
 </span>
 </div>
@@ -182,7 +182,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="https://www.gradle.org">Gradle 9.8.2</a> at Nov 13, 2026, 10:15:37 AM</p>
+<a href="https://www.gradle.org">Gradle 9.8.2</a> at Nov 13, 2026, 11:35:18 AM</p>
 </div>
 </div>
 </body>

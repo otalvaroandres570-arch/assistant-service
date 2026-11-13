@@ -49,3 +49,9 @@ spring:
 #     open-state-duration: 30s
 #   urgency:
 #     discharged-patient-ttl: 7d   # env: ASSISTANT_URGENCY_DISCHARGEDPATIENTTL
+
+#   kafka:                              # consumer of triaje.eventos (urgency view)
+#     enabled: true                     # env: ASSISTANT_KAFKA_ENABLED
+#     bootstrap-servers: localhost:9092 # env: ASSISTANT_KAFKA_BOOTSTRAPSERVERS
+#     topic: triaje.eventos             # env: ASSISTANT_KAFKA_TOPIC
+#     group-id: assistant-service       # env: ASSISTANT_KAFKA_GROUPID

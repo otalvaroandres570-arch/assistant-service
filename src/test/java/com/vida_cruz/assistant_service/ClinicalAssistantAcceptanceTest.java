@@ -11,7 +11,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertInstanceOf;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-@SpringBootTest
+// Talks to the real Gemini API, whose latency sometimes approaches the production 20s timeout.
+// This test checks answer content, not the timeout (ProviderGuardTest covers that), so it allows more time.
+@SpringBootTest(properties = "assistant.resilience.timeout=60s")
 @EnabledIfEnvironmentVariable(named = "GEMINI_API_KEY", matches = ".+")
 class ClinicalAssistantAcceptanceTest {
 
