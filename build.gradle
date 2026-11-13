@@ -39,6 +39,8 @@ dependencies {
 	implementation 'io.github.resilience4j:resilience4j-circuitbreaker:2.2.0'
 	implementation 'io.github.resilience4j:resilience4j-reactor:2.2.0'
 
+	implementation 'org.springframework.boot:spring-boot-starter-data-redis-reactive'
+
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 	testCompileOnly 'org.projectlombok:lombok'
@@ -47,6 +49,8 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'io.projectreactor:reactor-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+
+	testImplementation 'org.testcontainers:junit-jupiter'
 }
 
 tasks.withType(JavaCompile).configureEach {

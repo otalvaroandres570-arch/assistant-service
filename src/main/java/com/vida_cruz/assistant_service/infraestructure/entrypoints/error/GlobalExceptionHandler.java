@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.vida_cruz.assistant_service.domain.exceptions.AssistantUnavailableException;
 import com.vida_cruz.assistant_service.infraestructure.entrypoints.error.ErrorResponse.FieldViolation;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.dao.DataAccessResourceFailureException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -78,5 +79,13 @@ public class GlobalExceptionHandler {
                                                 List<FieldViolation> violations) {
         return ResponseEntity.status(status)
                 .body(ErrorResponse.of(status.value(), code, message, violations));
+    }
+
+    /** The state store (Redis) cannot be reached: the urgency view is temporarily unavailable. */
+    @ExceptionHandler(DataAccessResourceFailureException.class)
+    public ResponseEntity<ErrorResponse> handleStateStoreUnavailable(DataAccessResourceFailureException ex) {
+        log.warn("State store unavailable: {}", ex.toString());
+        return build(HttpStatus.SERVICE_UNAVAILABLE, "STATE_STORE_UNAVAILABLE",
+                "El estado de las urgencias no está disponible en este momento. Intente de nuevo más tarde", null);
     }
 }

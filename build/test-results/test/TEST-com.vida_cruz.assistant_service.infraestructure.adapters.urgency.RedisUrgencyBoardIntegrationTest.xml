@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.vida_cruz.assistant_service.infraestructure.adapters.urgency.RedisUrgencyBoardIntegrationTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-11-13T15:15:28.046Z" hostname="HOME" time="3.819">
+  <properties/>
+  <testcase name="shouldCountAPatientOnceEvenWhenTheSameEventIsAppliedConcurrently()" classname="com.vida_cruz.assistant_service.infraestructure.adapters.urgency.RedisUrgencyBoardIntegrationTest" time="0.583"/>
+  <testcase name="shouldTolerateEventsArrivingOutOfOrder()" classname="com.vida_cruz.assistant_service.infraestructure.adapters.urgency.RedisUrgencyBoardIntegrationTest" time="0.011"/>
+  <testcase name="shouldKeepAPatientActiveInConsultationAndRemoveItOnDischarge()" classname="com.vida_cruz.assistant_service.infraestructure.adapters.urgency.RedisUrgencyBoardIntegrationTest" time="0.022"/>
+  <testcase name="shouldCountTheActivePatientsOfEachLevel()" classname="com.vida_cruz.assistant_service.infraestructure.adapters.urgency.RedisUrgencyBoardIntegrationTest" time="0.009"/>
+  <testcase name="shouldIgnoreDuplicatesAndEscalations()" classname="com.vida_cruz.assistant_service.infraestructure.adapters.urgency.RedisUrgencyBoardIntegrationTest" time="0.017"/>
+  <system-out><![CDATA[10:15:28.200 [Test worker] INFO org.testcontainers.images.PullPolicy -- Image pull policy will be performed by: DefaultPullPolicy()
+10:15:28.209 [Test worker] INFO org.testcontainers.utility.ImageNameSubstitutor -- Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+10:15:28.225 [Test worker] INFO org.testcontainers.DockerClientFactory -- Testcontainers version: 1.21.4
+10:15:28.588 [Test worker] INFO org.testcontainers.dockerclient.DockerClientProviderStrategy -- Loaded org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+10:15:28.986 [Test worker] INFO org.testcontainers.dockerclient.DockerClientProviderStrategy -- Found Docker environment with local Npipe socket (npipe:////./pipe/docker_engine)
+10:15:28.988 [Test worker] INFO org.testcontainers.DockerClientFactory -- Docker host IP address is localhost
+10:15:29.015 [Test worker] INFO org.testcontainers.DockerClientFactory -- Connected to docker: 
+  Server Version: 29.9.3
+  API Version: 1.56
+  Operating System: Docker Desktop
+  Total Memory: 5813 MB
+  Labels: 
+    com.docker.desktop.address=npipe://\\.\pipe\docker_cli
+10:15:29.121 [Test worker] INFO tc.testcontainers/ryuk:0.12.0 -- Creating container for image: testcontainers/ryuk:0.12.0
+10:15:29.435 [Test worker] INFO tc.testcontainers/ryuk:0.12.0 -- Container testcontainers/ryuk:0.12.0 is starting: da27dcaff64b7093f5d561fc82349b790cae77a7c93c35283a6bd5780cd87a15
+10:15:29.908 [Test worker] INFO tc.testcontainers/ryuk:0.12.0 -- Container testcontainers/ryuk:0.12.0 started in PT0.7864548S
+10:15:29.919 [Test worker] INFO org.testcontainers.utility.RyukResourceReaper -- Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+10:15:29.920 [Test worker] INFO org.testcontainers.DockerClientFactory -- Checking the system...
+10:15:29.922 [Test worker] INFO org.testcontainers.DockerClientFactory -- ✔︎ Docker server version should be at least 1.6.0
+10:15:29.923 [Test worker] INFO tc.redis:7-alpine -- Creating container for image: redis:7-alpine
+10:15:30.042 [Test worker] INFO tc.redis:7-alpine -- Container redis:7-alpine is starting: 039add64aa98144cae3630ed6bb7dade017f90a75bc5b364e9c4188eb3a074bd
+10:15:30.443 [Test worker] INFO tc.redis:7-alpine -- Container redis:7-alpine started in PT0.5206479S
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
