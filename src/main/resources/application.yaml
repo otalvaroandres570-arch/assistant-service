@@ -1,6 +1,12 @@
 server:
-  port: 8081
+  port: 8082
 
 spring:
   application:
-    name: triage-service
+    name: assistant-service
+
+
+# Clinical protocol corpus (JSON in the classpath). Extend it by adding entries to the file.
+# assistant:
+#   corpus:
+#     location: protocols/protocols.json   # env: ASSISTANT_CORPUS_LOCATION
