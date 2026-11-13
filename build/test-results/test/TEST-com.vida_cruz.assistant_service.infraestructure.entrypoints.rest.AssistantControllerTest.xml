@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.vida_cruz.assistant_service.infraestructure.entrypoints.rest.AssistantControllerTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-11-13T05:07:36.590Z" hostname="HOME" time="5.067">
+<testsuite name="com.vida_cruz.assistant_service.infraestructure.entrypoints.rest.AssistantControllerTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-11-13T16:35:15.761Z" hostname="HOME" time="1.352">
   <properties/>
-  <testcase name="shouldAnswer503WithAClearMessageWhenTheAssistantIsUnavailable()" classname="com.vida_cruz.assistant_service.infraestructure.entrypoints.rest.AssistantControllerTest" time="0.469"/>
-  <testcase name="shouldRejectAnEmptyQuestionNamingTheFieldTheClientSent()" classname="com.vida_cruz.assistant_service.infraestructure.entrypoints.rest.AssistantControllerTest" time="0.031"/>
-  <testcase name="shouldReturnTheAnswerWithItsSources()" classname="com.vida_cruz.assistant_service.infraestructure.entrypoints.rest.AssistantControllerTest" time="0.031"/>
-  <testcase name="shouldReturnOnlyTheNoticeAndNoSourcesWhenThereIsNoProtocol()" classname="com.vida_cruz.assistant_service.infraestructure.entrypoints.rest.AssistantControllerTest" time="0.01"/>
-  <system-out><![CDATA[00:07:36.708 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.vida_cruz.assistant_service.infraestructure.entrypoints.rest.AssistantControllerTest]: AssistantControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-00:07:36.928 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.vida_cruz.assistant_service.AssistantServiceApplication for test class com.vida_cruz.assistant_service.infraestructure.entrypoints.rest.AssistantControllerTest
+  <testcase name="shouldAnswer503WithAClearMessageWhenTheAssistantIsUnavailable()" classname="com.vida_cruz.assistant_service.infraestructure.entrypoints.rest.AssistantControllerTest" time="0.531"/>
+  <testcase name="shouldRejectAnEmptyQuestionNamingTheFieldTheClientSent()" classname="com.vida_cruz.assistant_service.infraestructure.entrypoints.rest.AssistantControllerTest" time="0.026"/>
+  <testcase name="shouldReturnTheAnswerWithItsSources()" classname="com.vida_cruz.assistant_service.infraestructure.entrypoints.rest.AssistantControllerTest" time="0.019"/>
+  <testcase name="shouldReturnOnlyTheNoticeAndNoSourcesWhenThereIsNoProtocol()" classname="com.vida_cruz.assistant_service.infraestructure.entrypoints.rest.AssistantControllerTest" time="0.009"/>
+  <system-out><![CDATA[2026-11-13T11:35:15.767-05:00  INFO 18984 --- [assistant-service] [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.vida_cruz.assistant_service.infraestructure.entrypoints.rest.AssistantControllerTest]: AssistantControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-13T11:35:15.945-05:00  INFO 18984 --- [assistant-service] [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.vida_cruz.assistant_service.AssistantServiceApplication for test class com.vida_cruz.assistant_service.infraestructure.entrypoints.rest.AssistantControllerTest
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -17,15 +17,10 @@
 
  :: Spring Boot ::               (v3.5.16)
 
-2026-11-13T00:07:37.722-05:00  INFO 18736 --- [assistant-service] [    Test worker] c.v.a.i.e.rest.AssistantControllerTest   : Starting AssistantControllerTest using Java 21.0.12.1 with PID 18736 (started by Andres in C:\Users\Andres\IdeaProjects\ceiba-test\assistant-service)
-2026-11-13T00:07:37.725-05:00  INFO 18736 --- [assistant-service] [    Test worker] c.v.a.i.e.rest.AssistantControllerTest   : No active profile set, falling back to 1 default profile: "default"
-2026-11-13T00:07:41.096-05:00  INFO 18736 --- [assistant-service] [    Test worker] c.v.a.i.e.rest.AssistantControllerTest   : Started AssistantControllerTest in 4.074 seconds (process running for 6.206)
-2026-11-13T00:07:41.476-05:00  WARN 18736 --- [assistant-service] [     parallel-5] c.v.a.i.e.error.GlobalExceptionHandler   : Assistant unavailable: java.lang.IllegalStateException: gemini down
+2026-11-13T11:35:16.106-05:00  INFO 18984 --- [assistant-service] [    Test worker] c.v.a.i.e.rest.AssistantControllerTest   : Starting AssistantControllerTest using Java 21.0.12.1 with PID 18984 (started by Andres in C:\Users\Andres\IdeaProjects\ceiba-test\assistant-service)
+2026-11-13T11:35:16.107-05:00  INFO 18984 --- [assistant-service] [    Test worker] c.v.a.i.e.rest.AssistantControllerTest   : No active profile set, falling back to 1 default profile: "default"
+2026-11-13T11:35:16.522-05:00  INFO 18984 --- [assistant-service] [    Test worker] c.v.a.i.e.rest.AssistantControllerTest   : Started AssistantControllerTest in 0.561 seconds (process running for 56.245)
+2026-11-13T11:35:16.878-05:00  WARN 18984 --- [assistant-service] [     parallel-9] c.v.a.i.e.error.GlobalExceptionHandler   : Assistant unavailable: java.lang.IllegalStateException: gemini down
 ]]></system-out>
-  <system-err><![CDATA[Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
-WARNING: A Java agent has been loaded dynamically (C:\Users\Andres\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy-agent\1.17.8\f09415827a71be7ed621c7bd02550678f28bc81c\byte-buddy-agent-1.17.8.jar)
-WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
-WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
-WARNING: Dynamic loading of agents will be disallowed by default in a future release
-]]></system-err>
+  <system-err><![CDATA[]]></system-err>
 </testsuite>

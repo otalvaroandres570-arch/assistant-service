@@ -5,7 +5,6 @@ spring:
   application:
     name: assistant-service
   ai:
-    # The provider is wrapped by a circuit breaker and a timeout, so inner retries stay short.
     retry:
       max-attempts: 2
       backoff:
@@ -30,6 +29,10 @@ spring:
             model: ${GEMINI_EMBEDDING_MODEL:gemini-embedding-001}
             options:
               model: ${GEMINI_EMBEDDING_MODEL:gemini-embedding-001}
+  data:
+    redis:
+      host: ${REDIS_HOST:localhost}
+      port: ${REDIS_PORT:6379}
 
 # Clinical protocol corpus (JSON in the classpath). Extend it by adding entries to the file.
 # assistant:
@@ -44,3 +47,11 @@ spring:
 #     minimum-number-of-calls: 5
 #     failure-rate-threshold: 50
 #     open-state-duration: 30s
+#   urgency:
+#     discharged-patient-ttl: 7d   # env: ASSISTANT_URGENCY_DISCHARGEDPATIENTTL
+
+#   kafka:                              # consumer of triaje.eventos (urgency view)
+#     enabled: true                     # env: ASSISTANT_KAFKA_ENABLED
+#     bootstrap-servers: localhost:9092 # env: ASSISTANT_KAFKA_BOOTSTRAPSERVERS
+#     topic: triaje.eventos             # env: ASSISTANT_KAFKA_TOPIC
+#     group-id: assistant-service       # env: ASSISTANT_KAFKA_GROUPID

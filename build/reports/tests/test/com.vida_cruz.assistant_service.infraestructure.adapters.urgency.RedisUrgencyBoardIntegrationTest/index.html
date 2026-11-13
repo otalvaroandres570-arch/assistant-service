@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - com.vida_cruz.assistant_service.infraestructure.adapters.urgency.RedisUrgencyBoardIntegrationTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<div class="breadcrumbs">
+<a class="breadcrumb" href="../index.html">all</a> &gt; 
+<span class="breadcrumb">com.vida_cruz.assistant_service.infraestructure.adapters.urgency.RedisUrgencyBoardIntegrationTest</span>
+</div>
+<div class="tab-container">
+<ul class="tabLinks">
+<li>
+<a class="successGroup" href="#">Gradle Test Run :test</a>
+</li>
+</ul>
+<div class="tab">
+<h2>Gradle Test Run :test</h2>
+<h1>RedisUrgencyBoardIntegrationTest</h1>
+<div class="tab-container">
+<ul class="tabLinks">
+<li>
+<a class="" href="#">summary</a>
+</li>
+<li>
+<a class="" href="#">standard output</a>
+</li>
+</ul>
+<div class="tab">
+<h2>summary</h2>
+<div>
+<div class="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox">
+<div class="counter">5</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox">
+<div class="counter">0</div>
+<p>skipped</p>
+</div>
+</td>
+<td>
+<div class="infoBox duration">
+<div class="counter">5.883s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<table class="test-results sortable">
+<thead>
+<tr>
+<th>Child</th>
+<th hidden="">Name</th>
+<th data-sort-default="desc">Tests</th>
+<th data-sort-default="desc">Failures</th>
+<th data-sort-default="desc">Skipped</th>
+<th data-sort-default="desc">Duration</th>
+<th>Success rate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="success">shouldCountAPatientOnceEvenWhenTheSameEventIsAppliedConcurrently()</td>
+<td class="path" hidden="">shouldCountAPatientOnceEvenWhenTheSameEventIsAppliedConcurrently()</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td data-sort-value="1422">1.422s</td>
+<td class="success" data-sort-value="100">100%</td>
+</tr>
+<tr>
+<td class="success">shouldCountTheActivePatientsOfEachLevel()</td>
+<td class="path" hidden="">shouldCountTheActivePatientsOfEachLevel()</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td data-sort-value="19">0.019s</td>
+<td class="success" data-sort-value="100">100%</td>
+</tr>
+<tr>
+<td class="success">shouldIgnoreDuplicatesAndEscalations()</td>
+<td class="path" hidden="">shouldIgnoreDuplicatesAndEscalations()</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td data-sort-value="28">0.028s</td>
+<td class="success" data-sort-value="100">100%</td>
+</tr>
+<tr>
+<td class="success">shouldKeepAPatientActiveInConsultationAndRemoveItOnDischarge()</td>
+<td class="path" hidden="">shouldKeepAPatientActiveInConsultationAndRemoveItOnDischarge()</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td data-sort-value="40">0.040s</td>
+<td class="success" data-sort-value="100">100%</td>
+</tr>
+<tr>
+<td class="success">shouldTolerateEventsArrivingOutOfOrder()</td>
+<td class="path" hidden="">shouldTolerateEventsArrivingOutOfOrder()</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td data-sort-value="19">0.019s</td>
+<td class="success" data-sort-value="100">100%</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="tab">
+<h2>standard output</h2>
+<span class="code">
+<div class="clipboard-copy-btn-container">
+<button class="clipboard-copy-btn" aria-label="Copy to clipboard" data-copy-element-id="root-0-test-stdout-com.vida_cruz.assistant_service.infraestructure.adapters.urgency.RedisUrgencyBoardIntegrationTest">Copy</button>
+</div>
+<pre id="root-0-test-stdout-com.vida_cruz.assistant_service.infraestructure.adapters.urgency.RedisUrgencyBoardIntegrationTest">2026-11-13T11:34:51.684-05:00  INFO 18984 --- [assistant-service] [    Test worker] org.testcontainers.images.PullPolicy     : Image pull policy will be performed by: DefaultPullPolicy()
+2026-11-13T11:34:51.691-05:00  INFO 18984 --- [assistant-service] [    Test worker] o.t.utility.ImageNameSubstitutor         : Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2026-11-13T11:34:51.718-05:00  INFO 18984 --- [assistant-service] [    Test worker] org.testcontainers.DockerClientFactory   : Testcontainers version: 1.21.4
+2026-11-13T11:34:52.154-05:00  INFO 18984 --- [assistant-service] [    Test worker] o.t.d.DockerClientProviderStrategy       : Loaded org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2026-11-13T11:34:52.709-05:00  INFO 18984 --- [assistant-service] [    Test worker] o.t.d.DockerClientProviderStrategy       : Found Docker environment with local Npipe socket (npipe:////./pipe/docker_engine)
+2026-11-13T11:34:52.712-05:00  INFO 18984 --- [assistant-service] [    Test worker] org.testcontainers.DockerClientFactory   : Docker host IP address is localhost
+2026-11-13T11:34:52.739-05:00  INFO 18984 --- [assistant-service] [    Test worker] org.testcontainers.DockerClientFactory   : Connected to docker: 
+  Server Version: 29.9.3
+  API Version: 1.56
+  Operating System: Docker Desktop
+  Total Memory: 5813 MB
+  Labels: 
+    com.docker.desktop.address=npipe://\\.\pipe\docker_cli
+2026-11-13T11:34:52.896-05:00  INFO 18984 --- [assistant-service] [    Test worker] tc.testcontainers/ryuk:0.12.0            : Creating container for image: testcontainers/ryuk:0.12.0
+2026-11-13T11:34:53.327-05:00  INFO 18984 --- [assistant-service] [    Test worker] tc.testcontainers/ryuk:0.12.0            : Container testcontainers/ryuk:0.12.0 is starting: 203269371ea14847f7d4ea7abbf3ee38f57851d0f3173a2ef8a5b2039efcdee0
+2026-11-13T11:34:53.887-05:00  INFO 18984 --- [assistant-service] [    Test worker] tc.testcontainers/ryuk:0.12.0            : Container testcontainers/ryuk:0.12.0 started in PT0.9914811S
+2026-11-13T11:34:53.897-05:00  INFO 18984 --- [assistant-service] [    Test worker] o.t.utility.RyukResourceReaper           : Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2026-11-13T11:34:53.898-05:00  INFO 18984 --- [assistant-service] [    Test worker] org.testcontainers.DockerClientFactory   : Checking the system...
+2026-11-13T11:34:53.898-05:00  INFO 18984 --- [assistant-service] [    Test worker] org.testcontainers.DockerClientFactory   : ✔︎ Docker server version should be at least 1.6.0
+2026-11-13T11:34:53.899-05:00  INFO 18984 --- [assistant-service] [    Test worker] tc.redis:7-alpine                        : Creating container for image: redis:7-alpine
+2026-11-13T11:34:54.221-05:00  INFO 18984 --- [assistant-service] [    Test worker] tc.redis:7-alpine                        : Container redis:7-alpine is starting: ae294de064309ff5a99bd70f08a38c3e682d3edd2b2b7a189240cfafbc6e2c9c
+2026-11-13T11:34:55.324-05:00  INFO 18984 --- [assistant-service] [    Test worker] tc.redis:7-alpine                        : Container redis:7-alpine started in PT1.4247263S
+</pre>
+</span>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="https://www.gradle.org">Gradle 9.8.2</a> at Nov 13, 2026, 11:35:18 AM</p>
+</div>
+</div>
+</body>
+</html>
