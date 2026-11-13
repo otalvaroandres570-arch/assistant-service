@@ -12,7 +12,7 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-@SpringBootTest(properties = "assistant.rag.top-k=7")
+@SpringBootTest(properties = {"assistant.rag.top-k=7", "assistant.rag.similarity-threshold=0.0"})
 @EnabledIfEnvironmentVariable(named = "GEMINI_API_KEY", matches = ".+")
 class RetrievalCalibrationTest {
 

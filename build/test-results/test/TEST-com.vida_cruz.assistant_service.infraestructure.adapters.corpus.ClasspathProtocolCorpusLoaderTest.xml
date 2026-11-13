@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.vida_cruz.assistant_service.infraestructure.adapters.corpus.ClasspathProtocolCorpusLoaderTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2026-11-13T04:45:21.484Z" hostname="HOME" time="0.041">
+  <properties/>
+  <testcase name="shouldSplitEachProtocolIntoItsSectionsInOrder()" classname="com.vida_cruz.assistant_service.infraestructure.adapters.corpus.ClasspathProtocolCorpusLoaderTest" time="0.001"/>
+  <testcase name="shouldFailWithAClearErrorWhenTheFileDoesNotExist()" classname="com.vida_cruz.assistant_service.infraestructure.adapters.corpus.ClasspathProtocolCorpusLoaderTest" time="0.002"/>
+  <testcase name="shouldLoadTheThreeMandatoryProtocols()" classname="com.vida_cruz.assistant_service.infraestructure.adapters.corpus.ClasspathProtocolCorpusLoaderTest" time="0.001"/>
+  <testcase name="PROTO-001 / Definición is transcribed verbatim" classname="com.vida_cruz.assistant_service.infraestructure.adapters.corpus.ClasspathProtocolCorpusLoaderTest" time="0.004"/>
+  <testcase name="PROTO-001 / Medidas iniciales is transcribed verbatim" classname="com.vida_cruz.assistant_service.infraestructure.adapters.corpus.ClasspathProtocolCorpusLoaderTest" time="0.0"/>
+  <testcase name="PROTO-001 / Contraindicaciones is transcribed verbatim" classname="com.vida_cruz.assistant_service.infraestructure.adapters.corpus.ClasspathProtocolCorpusLoaderTest" time="0.0"/>
+  <testcase name="PROTO-002 / Criterios is transcribed verbatim" classname="com.vida_cruz.assistant_service.infraestructure.adapters.corpus.ClasspathProtocolCorpusLoaderTest" time="0.0"/>
+  <testcase name="PROTO-002 / Acciones iniciales is transcribed verbatim" classname="com.vida_cruz.assistant_service.infraestructure.adapters.corpus.ClasspathProtocolCorpusLoaderTest" time="0.001"/>
+  <testcase name="PROTO-003 / Clasificación is transcribed verbatim" classname="com.vida_cruz.assistant_service.infraestructure.adapters.corpus.ClasspathProtocolCorpusLoaderTest" time="0.001"/>
+  <testcase name="PROTO-003 / Rehidratación is transcribed verbatim" classname="com.vida_cruz.assistant_service.infraestructure.adapters.corpus.ClasspathProtocolCorpusLoaderTest" time="0.0"/>
+  <testcase name="PROTO-001 is titled &quot;Crisis Hipertensiva, manejo inicial&quot;" classname="com.vida_cruz.assistant_service.infraestructure.adapters.corpus.ClasspathProtocolCorpusLoaderTest" time="0.003"/>
+  <testcase name="PROTO-002 is titled &quot;Sepsis, identificación temprana (qSOFA)&quot;" classname="com.vida_cruz.assistant_service.infraestructure.adapters.corpus.ClasspathProtocolCorpusLoaderTest" time="0.001"/>
+  <testcase name="PROTO-003 is titled &quot;Deshidratación pediátrica&quot;" classname="com.vida_cruz.assistant_service.infraestructure.adapters.corpus.ClasspathProtocolCorpusLoaderTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -8,7 +8,7 @@ import java.util.Optional;
 @ConfigurationProperties(prefix = "assistant.rag")
 public record RagProperties(
         @DefaultValue("3") int topK,
-        @DefaultValue("0.0") double similarityThreshold
+        @DefaultValue("0.65") double similarityThreshold
 ) {
 
     public RagProperties {

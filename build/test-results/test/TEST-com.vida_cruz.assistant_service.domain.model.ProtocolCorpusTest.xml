@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.vida_cruz.assistant_service.domain.model.ProtocolCorpusTest" tests="15" skipped="0" failures="0" errors="0" timestamp="2026-11-13T04:45:21.339Z" hostname="HOME" time="0.092">
+  <properties/>
+  <testcase name="shouldRejectAnEmptyCorpus()" classname="com.vida_cruz.assistant_service.domain.model.ProtocolCorpusTest" time="0.003"/>
+  <testcase name="shouldFindASectionByItsCitation()" classname="com.vida_cruz.assistant_service.domain.model.ProtocolCorpusTest" time="0.0"/>
+  <testcase name="shouldContainExistingCitations()" classname="com.vida_cruz.assistant_service.domain.model.ProtocolCorpusTest" time="0.001"/>
+  <testcase name="shouldRejectBlankCitations()" classname="com.vida_cruz.assistant_service.domain.model.ProtocolCorpusTest" time="0.001"/>
+  <testcase name="shouldNotBeAffectedByLaterChangesToTheListItWasBuiltFrom()" classname="com.vida_cruz.assistant_service.domain.model.ProtocolCorpusTest" time="0.0"/>
+  <testcase name="shouldRejectDuplicatedSections()" classname="com.vida_cruz.assistant_service.domain.model.ProtocolCorpusTest" time="0.0"/>
+  <testcase name="shouldListTheProtocolsWithoutRepeatingThemAndInOrder()" classname="com.vida_cruz.assistant_service.domain.model.ProtocolCorpusTest" time="0.001"/>
+  <testcase name="PROTO-999 / Definición does not exist" classname="com.vida_cruz.assistant_service.domain.model.ProtocolCorpusTest" time="0.01"/>
+  <testcase name="PROTO-001 / Dosis does not exist" classname="com.vida_cruz.assistant_service.domain.model.ProtocolCorpusTest" time="0.0"/>
+  <testcase name="PROTO-002 / Definición does not exist" classname="com.vida_cruz.assistant_service.domain.model.ProtocolCorpusTest" time="0.001"/>
+  <testcase name="proto-001 / Definición does not exist" classname="com.vida_cruz.assistant_service.domain.model.ProtocolCorpusTest" time="0.0"/>
+  <testcase name="blank protocolId is rejected" classname="com.vida_cruz.assistant_service.domain.model.ProtocolCorpusTest" time="0.001"/>
+  <testcase name="blank protocolTitle is rejected" classname="com.vida_cruz.assistant_service.domain.model.ProtocolCorpusTest" time="0.0"/>
+  <testcase name="blank name is rejected" classname="com.vida_cruz.assistant_service.domain.model.ProtocolCorpusTest" time="0.0"/>
+  <testcase name="blank content is rejected" classname="com.vida_cruz.assistant_service.domain.model.ProtocolCorpusTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
