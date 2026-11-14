@@ -81,7 +81,7 @@ class UrgencyEventConsumerIntegrationTest {
     }
 
     @Test
-    void shouldBuildTheUrpZEAWYtiB6bJ16NuLbGCc6CZ6jJdKfb63() throws Exception {
+    void shouldBuildTheUrgencyViewFromTheTriageEvents() throws Exception {
         String topic = createTopic();
         RedisUrgencyBoard board = new RedisUrgencyBoard(redis, Duration.ofDays(7));
         startConsumer(topic, new TrackUrgencyUseCase(board));
