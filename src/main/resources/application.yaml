@@ -55,3 +55,8 @@ spring:
 #     bootstrap-servers: localhost:9092 # env: ASSISTANT_KAFKA_BOOTSTRAPSERVERS
 #     topic: triaje.eventos             # env: ASSISTANT_KAFKA_TOPIC
 #     group-id: assistant-service       # env: ASSISTANT_KAFKA_GROUPID
+# API key authentication. Secure by default: the service refuses to start without a key of 16+ characters.
+# assistant:
+#   security:
+#     api-keys: ${...}   # env: ASSISTANT_SECURITY_APIKEYS (secret; comma-separated to rotate keys without downtime)
+#     enabled: true      # only ever false in automated tests
