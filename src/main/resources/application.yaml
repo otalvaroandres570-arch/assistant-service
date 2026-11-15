@@ -1,9 +1,12 @@
 server:
   port: 8082
+  shutdown: graceful
 
 spring:
   application:
     name: assistant-service
+  lifecycle:
+    timeout-per-shutdown-phase: 20s
   ai:
     retry:
       max-attempts: 2
