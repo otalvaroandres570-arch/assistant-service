@@ -46,6 +46,10 @@ dependencies {
 	implementation 'io.micrometer:micrometer-registry-prometheus'
 	implementation 'io.github.resilience4j:resilience4j-micrometer:2.2.0'
 
+	implementation 'io.micrometer:micrometer-tracing-bridge-otel'
+	implementation 'io.micrometer:context-propagation'
+	implementation 'net.logstash.logback:logstash-logback-encoder:8.0'
+
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 	testCompileOnly 'org.projectlombok:lombok'
