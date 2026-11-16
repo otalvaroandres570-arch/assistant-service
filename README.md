@@ -5,7 +5,7 @@ con respuestas que **siempre citan su fuente** y sin contenido inventado, y ofre
 reconstruida únicamente con los eventos que publica el servicio de Triage.
 
 La documentación completa (cómo ejecutar todo con un comando, arquitectura, supuestos y ADR) está en el repositorio
-[`vidacruz-platform`](https://github.com/<usuario>/vidacruz-platform).
+[`vidacruz-platform`](https://github.com/otalvaroandres570-arch/vidacruz-platform).
 
 ## Ejecutar y probar
 
